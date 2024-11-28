@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Import des classes nécessaires -->
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.geometry.Insets?>
+
+<!-- Conteneur principal VBox -->
+<VBox spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="com.example.SecondaryController">
+
+    <!-- Enfants du VBox principal -->
+    <children>
+        <!-- Conteneur pour afficher la liste des tables -->
+        <VBox styleClass="labelListe">
+            <!-- Label pour le titre -->
+            <Label styleClass="labListe" text="VOS TABLES" fx:id=""/>
+            <!-- Liste des commandes associées à l'utilisateur -->
+            <ListView fx:id="commandListView" prefWidth="600"/>
+        </VBox>
+
+        <!-- Conteneur pour les boutons de navigation -->
+        <HBox styleClass="bouttonListe" >
+            <!-- Bouton pour retourner à l'écran principal -->
+            <Button fx:id="" text="RETOUR" onAction="#switchToPrimary"/>
+            <!-- Bouton pour valider et passer à l'écran principal avec la table sélectionnée -->
+            <Button fx:id="validateButton" text="VALIDER" onAction="#validateAndSwitchToPrimary"/>
+        </HBox>
+    </children>
+
+    <!-- Configuration des marges pour le VBox principal -->
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+</VBox>

@@ -1,0 +1,157 @@
+/* --- Conteneurs principaux --- */
+
+/* Centrer le contenu verticalement et horizontalement dans les VBox */
+.containerVBox {
+    -fx-alignment: center;
+}
+
+/* --- Boutons et barres de commandes --- */
+
+/* Style des boutons dans la barre de commandes */
+.commandeBoutton {
+    -fx-alignment: center; /* Centre les boutons horizontalement */
+    -fx-spacing: 200; /* Espacement entre les boutons */
+}
+
+/* --- Informations de table --- */
+
+/* Barre d'informations sur la table (nom de l'utilisateur et numéro de table) */
+.nomTable {
+    -fx-font-weight: bold; /* Met le texte en gras */
+    -fx-padding: 10; /* Espacement interne */
+    -fx-background-color: lightgray; /* Fond de couleur gris clair */
+    -fx-alignment: center; /* Centre les éléments */
+    -fx-spacing: 180; /* Espacement entre les colonnes */
+}
+
+/* Barre pour les informations de paiement */
+.payerOuPas {
+    -fx-font-weight: bold; /* Met le texte en gras */
+    -fx-padding: 10; /* Espacement interne */
+    -fx-background-color: lightgray; /* Fond de couleur gris clair */
+    -fx-alignment: center; /* Centre les éléments */
+    -fx-spacing: 300; /* Espacement horizontal */
+}
+
+/* --- Total de la commande --- */
+
+/* Style pour l'affichage du prix total */
+.prixTotal {
+    -fx-font-weight: bold; /* Texte en gras */
+}
+
+/* --- TableView --- */
+
+/* Centrer l'en-tête des colonnes dans le TableView */
+.table-column-header {
+    -fx-alignment: center;
+}
+
+/* --- ListView et boutons associés --- */
+
+/* Conteneur pour les boutons dans la vue liste */
+.bouttonListe {
+    -fx-alignment: center; /* Centre les boutons */
+    -fx-spacing: 250; /* Ajoute un grand espacement entre les boutons */
+}
+
+/* Conteneur pour la liste */
+.labelListe {
+    -fx-alignment: center; /* Centre la liste verticalement et horizontalement */
+}
+
+/* Label dans la liste des tables */
+.labListe {
+    -fx-font-weight: bold; /* Texte en gras */
+    -fx-padding: 0 0 15 0; /* Ajoute une marge inférieure au texte */
+    -fx-font-size: 13px; /* Taille de la police */
+}
+
+/* Bouton pour retourner à une autre vue */
+.retourBoutton {
+    -fx-alignment: center_right; /* Aligne le bouton à droite */
+}
+
+/* --- Styles divers --- */
+
+/* Label utilisé pour afficher des informations comme "Nouvelle Table" */
+.labelNewTable {
+    -fx-font-weight: bold; /* Texte en gras */
+    -fx-font-size: 13px; /* Taille de la police */
+}
+
+/* --- Boutons personnalisés --- */
+
+/* Bouton pour envoyer une commande */
+.btn-envoie {
+    -fx-background-color: #4CAF50; /* Couleur verte */
+    -fx-text-fill: white; /* Texte blanc */
+    -fx-min-width: 120px; /* Largeur minimale */
+    -fx-min-height: 50px; /* Hauteur minimale */
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-padding: 10px 20px; /* Espacement interne */
+    -fx-border-radius: 5px; /* Coins arrondis */
+    -fx-background-radius: 5px; /* Coins arrondis pour le fond */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-color: #000000; /* Couleur de la bordure */
+    -fx-border-style: solid; /* Style de bordure solide */
+    -fx-cursor: hand; /* Curseur de type main */
+    -fx-transition: all 0.3s ease; /* Transition fluide au survol */
+}
+
+/* Style au survol pour le bouton d'envoi */
+.btn-envoie:hover {
+    -fx-background-color: #388E3C; /* Vert plus foncé */
+    -fx-border-color: #1B5E20; /* Bordure vert foncé */
+}
+
+/* Bouton pour encaisser */
+.btn-encaisser {
+    -fx-background-color: #2196F3; /* Couleur bleue */
+    -fx-text-fill: white; /* Texte blanc */
+    -fx-min-width: 120px; /* Largeur minimale */
+    -fx-min-height: 50px; /* Hauteur minimale */
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-padding: 10px 20px; /* Espacement interne */
+    -fx-border-radius: 5px; /* Coins arrondis */
+    -fx-background-radius: 5px; /* Coins arrondis pour le fond */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-color: #000000; /* Couleur de la bordure */
+    -fx-border-style: solid; /* Style de bordure solide */
+    -fx-cursor: hand; /* Curseur de type main */
+    -fx-transition: all 0.3s ease; /* Transition fluide au survol */
+}
+
+/* Style au survol pour le bouton encaisser */
+.btn-encaisser:hover {
+    -fx-background-color: #1976D2; /* Bleu plus foncé */
+    -fx-border-color: #1565C0; /* Bordure bleu foncé */
+}
+
+/* Bouton pour annuler */
+.btn-annuler {
+    -fx-background-color: #F44336; /* Couleur rouge */
+    -fx-text-fill: white; /* Texte blanc */
+    -fx-min-width: 120px; /* Largeur minimale */
+    -fx-min-height: 50px; /* Hauteur minimale */
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-padding: 10px 20px; /* Espacement interne */
+    -fx-border-radius: 5px; /* Coins arrondis */
+    -fx-background-radius: 5px; /* Coins arrondis pour le fond */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-color: #000000; /* Couleur de la bordure */
+    -fx-border-style: solid; /* Style de bordure solide */
+    -fx-cursor: hand; /* Curseur de type main */
+    -fx-transition: all 0.3s ease; /* Transition fluide au survol */
+}
+
+/* Style au survol pour le bouton annuler */
+.btn-annuler:hover {
+    -fx-background-color: #D32F2F; /* Rouge plus foncé */
+    -fx-border-color: #C62828; /* Bordure rouge foncé */
+}
+
+.custom-dialog .header-panel {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
